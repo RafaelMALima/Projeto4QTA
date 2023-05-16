@@ -3,4 +3,5 @@ def IQA(q_i):
     iqa_parcial =lambda q,i : q**w_i[i]
     iqa = 1
     q_i = []
-    for i in range(len(w_i)): iqa*= iqa_parcial(q_i[i], i)
+    for i in range(1,len(w_i)): iqa*= iqa_parcial(q_i[i], i)
+    return iqa
